@@ -38,8 +38,8 @@ public class StreamReaderThread implements Runnable {
         thread = new Thread(this);
         commandPaneText = "";//pane.getText(); //uncomment this for not clearing up the output screen
         this.outputDirectory = outputDirectory;
-        pane.setForeground(Color.red);
-        pane.setBackground(Color.blue);
+        pane.setForeground(Color.blue);
+        pane.setBackground(Color.red);
     }
 
     /**
@@ -81,12 +81,12 @@ public class StreamReaderThread implements Runnable {
             commandPaneText += "Results saved to " + outputDirectory;
             commandPane.setText(commandPaneText);
 
-            //notify parent about its status
-            if (commandPaneText.contains("Run took approximately")) {
-                parent.notifyCommandCompletion(true);   //success
-            } else {
-                parent.notifyCommandCompletion(false);  //failure
-            }
+//            //notify parent about its status
+//            if (commandPaneText.contains("Run took approximately")) {
+//                parent.notifyCommandCompletion(true);   //success
+//            } else {
+//                parent.notifyCommandCompletion(false);  //failure
+//            }
 
         } catch (Exception e) {
             System.out.println("Error while reading output from APT");

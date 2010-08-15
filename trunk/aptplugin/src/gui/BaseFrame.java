@@ -539,12 +539,14 @@ public class BaseFrame extends javax.swing.JFrame {
                             if (status == 0) {
                                 JOptionPane.showMessageDialog(BaseFrame.this, "Successfully processed the data",
                                         "Congratulations", JOptionPane.INFORMATION_MESSAGE);
+                                notifyCommandCompletion(true);
                             } else {
                                 JOptionPane.showMessageDialog(BaseFrame.this, "Failed to process the data",
                                         "Failure", JOptionPane.ERROR_MESSAGE);
                                 backButton.setEnabled(true);
 //                                nextButton.setEnabled(true);
                                 BaseFrame.this.setCursor(Cursor.DEFAULT_CURSOR);
+                                notifyCommandCompletion(false);
                             }
                             System.out.println("FINISHED :)");
 
