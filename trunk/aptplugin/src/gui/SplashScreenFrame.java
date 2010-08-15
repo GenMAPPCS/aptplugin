@@ -128,6 +128,13 @@ public class SplashScreenFrame extends javax.swing.JFrame {
 
         if (!(confDir.exists() && resDir.exists())) //if any one/both of these directories dont exist
         {   //download it from internet and extract it there
+
+            //as user before downloading
+            int res = JOptionPane.showConfirmDialog(this, "Configuration files not found. Program will now try to download it from internet.\nPress Ok when ready.", "Configuration missing!", JOptionPane.OK_CANCEL_OPTION);
+            if (res != JOptionPane.OK_OPTION) //user clicked cancel
+            {
+                return;
+            }
             String osName = System.getProperty("os.name").trim().toLowerCase();
             Downloader downloader = new Downloader();
 
