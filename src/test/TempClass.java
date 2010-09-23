@@ -29,6 +29,7 @@ import java.net.MalformedURLException;
  *
  * @author Anurag Sharma, the user
  */
+@SuppressWarnings("all")
 public class TempClass {
 
     public static void main(String[] args) throws MalformedURLException, IOException {

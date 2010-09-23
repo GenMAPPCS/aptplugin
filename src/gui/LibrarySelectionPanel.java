@@ -36,6 +36,7 @@ import javax.swing.filechooser.FileFilter;
  * Responsible for presenting the user with components to locate various library files needed for processing of CEL files
  * @author Anurag Sharma
  */
+@SuppressWarnings("all")
 public class LibrarySelectionPanel extends javax.swing.JPanel {
 
     private static final int COUNT = 5;

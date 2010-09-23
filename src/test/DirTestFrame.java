@@ -31,6 +31,7 @@ import javax.swing.DefaultListModel;
  *
  * @author user
  */
+@SuppressWarnings("all")
 public class DirTestFrame extends javax.swing.JFrame {
 
     DefaultListModel model = new DefaultListModel();

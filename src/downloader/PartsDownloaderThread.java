@@ -71,7 +71,8 @@ public class PartsDownloaderThread implements Runnable {
         while (!finished && retryCounter < MAX_RETRY) {
             try {
 
-                int len = endByte - startByte + 1;
+                @SuppressWarnings("unused")
+				int len = endByte - startByte + 1;
                 byte buffer[] = new byte[1024];
 
                 connection = (HttpURLConnection) task.getURL().openConnection();
@@ -85,7 +86,8 @@ public class PartsDownloaderThread implements Runnable {
                     outputDir.mkdir();
                 }
 
-                int res = connection.getResponseCode();
+                @SuppressWarnings("unused")
+				int res = connection.getResponseCode();
 //                System.out.println("Response=" + connection.getResponseMessage());
                 InputStream in = connection.getInputStream();
                 OutputStream out = new BufferedOutputStream(new FileOutputStream(FileLocator.downloadDirLocation + "/" + task.getID() + "/" + task.getID() + "part" + partNumber));

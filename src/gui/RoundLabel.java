@@ -23,6 +23,7 @@ import javax.swing.JLabel;
  * Custom JLabel with rounded corners
  * @author Anurag Sharma
  */
+@SuppressWarnings("all")
 class RoundLabel extends JLabel {
 
     public RoundLabel(String name) {

@@ -32,6 +32,7 @@ import javax.swing.JOptionPane;
  * Displays the splash scren at the start of the progam
  * @author Anurag Sharma
  */
+@SuppressWarnings("all")
 public class SplashScreenFrame extends javax.swing.JFrame {
 
     private LibrarySelectionPanel librarySelectionPanel;

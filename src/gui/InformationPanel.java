@@ -27,6 +27,7 @@ import javax.swing.JOptionPane;
  * This is responsible for displaying the information which user has selected in various screens
  * @author Anurag Sharma
  */
+@SuppressWarnings("all")
 public class InformationPanel extends javax.swing.JPanel {
 
     private CELSelectionPanel celPanel;
