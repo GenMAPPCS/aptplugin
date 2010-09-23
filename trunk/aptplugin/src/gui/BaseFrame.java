@@ -47,6 +47,7 @@ import extractor.ZipExtractor;
  * This is the main GUI class which contains the base GUI to host various
  * other components. This represents the main window of the program.
  */
+@SuppressWarnings("all")
 public class BaseFrame extends javax.swing.JFrame {
 
     private int currentScreen = 1;
@@ -60,7 +61,7 @@ public class BaseFrame extends javax.swing.JFrame {
     private Process aptProcess = null;
     private boolean aptProcessRunning = false;
     private File outputDirectory = null;
-    private SplashScreenFrame splashFrame;
+	private SplashScreenFrame splashFrame;
     private boolean commandSuccessfullyCompleted = false;
     private static PluginMain mainPluginClass = null;
 

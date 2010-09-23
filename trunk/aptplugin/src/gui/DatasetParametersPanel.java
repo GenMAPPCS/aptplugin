@@ -42,6 +42,7 @@ import javax.swing.filechooser.FileFilter;
  * shows window to select species, array etc.
  * @author Anurag Sharma
  */
+@SuppressWarnings("all")
 public class DatasetParametersPanel extends javax.swing.JPanel {
 
     private File outputDirectoryFile = new File("~/output-gene"); //changed for plugin

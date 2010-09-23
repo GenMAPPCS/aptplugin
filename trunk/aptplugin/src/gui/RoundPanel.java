@@ -26,6 +26,7 @@ import javax.swing.JPanel;
  * Custom JPanel with rounded corners
  * @author Anurag Sharma, the user
  */
+@SuppressWarnings("all")
 public class RoundPanel extends JPanel {
 
     private JPanel insidePanel;

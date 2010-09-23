@@ -30,6 +30,7 @@ import javax.swing.JOptionPane;
  *
  * @author Anurag Sharma, the user
  */
+@SuppressWarnings("all")
 public class PluginMain extends CytoscapePlugin {
 
     private ArrayList<APTEventListener> listenerList;

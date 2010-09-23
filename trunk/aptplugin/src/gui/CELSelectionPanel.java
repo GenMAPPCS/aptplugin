@@ -36,6 +36,7 @@ import javax.swing.filechooser.FileFilter;
  * Panel for selecting the CEL files
  * @author Anurag Sharma
  */
+@SuppressWarnings("all")
 public class CELSelectionPanel extends javax.swing.JPanel {
 
     private ArrayList<File> celFileList = new ArrayList<File>();

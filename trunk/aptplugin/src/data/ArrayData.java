@@ -22,6 +22,7 @@ import java.util.Properties;
  * The data structure to store the Array data as parsed from the file ArrayFileInfo.txt
  * @author Anurag Sharma
  */
+@SuppressWarnings("unchecked")
 public class ArrayData implements Comparable {
 
     private static String baseURL = "http://localhost/";

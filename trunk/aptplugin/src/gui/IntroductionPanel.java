@@ -28,6 +28,7 @@ import java.util.Scanner;
  * This class is responsible for displaying the GPL license
  * @author Anurag Sharma
  */
+@SuppressWarnings("all")
 public class IntroductionPanel extends javax.swing.JPanel {
 
     /** Creates new form IntroductionPanel */

@@ -30,6 +30,7 @@ import java.util.zip.ZipInputStream;
  * ZIP compressed file extraction utility class
  * @author Anurag Sharma
  */
+@SuppressWarnings("all")
 public class MyZipExtractor {
 
     /**

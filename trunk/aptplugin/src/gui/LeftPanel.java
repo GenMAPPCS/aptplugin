@@ -26,6 +26,7 @@ import javax.swing.JPanel;
  * Shows the list of titles of the screens which are available to be filled
  * @author Anurag Sharma
  */
+@SuppressWarnings("all")
 public class LeftPanel extends JPanel {
 
     private Color backgroundColor;

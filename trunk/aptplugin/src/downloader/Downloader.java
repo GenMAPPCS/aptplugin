@@ -372,9 +372,10 @@ public class Downloader implements DownloadListener {
 
     }
 
-    private void showProgressBar() {
+    @SuppressWarnings("unused")
+	private void showProgressBar() {
         JFrame f = new JFrame();
-        f.setDefaultCloseOperation(f.EXIT_ON_CLOSE);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setSize(400, 200);
         JPanel p = new JPanel();
         pbar = new JProgressBar(0, 100);
